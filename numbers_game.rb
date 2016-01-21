@@ -1,11 +1,12 @@
-puts 'lets play a game'
-reply = gets.chomp
-puts 'i want you to guess a number between 1 and 100'
-answer = gets.chomp
-	if answer == 89
-		puts 'Thats the one!'
-	elsif answer >80; <95
-		puts 'oooh, so close'
-	else
-		puts 'nah, you wrong'		
-	end
+puts 'Guess a number between 1 and 10'
+while true
+	number = gets.chomp.to_i
+		if number == 4
+			puts 'Got it!'
+		elsif number < 4
+			puts 'guess again'
+		elsif number > 4
+			puts 'guess again'
+		end
+	end				
+
